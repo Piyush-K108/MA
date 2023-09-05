@@ -1,0 +1,73 @@
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--wp--preset--color--black);
+    color: var(--wp--preset--color--white);
+    text-align: center;
+}
+
+.h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.lowersite {
+    background-color: black;
+    padding: 20px 0; /* Add padding to the top and bottom */
+    text-align: center; /* Center-align the content */
+}
+
+.l1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.l1 h5 {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    font-size: 15px; /* Adjust font size as needed */
+    color: #6e6a6a; /* Cream white color */
+} 
+
+.quote p{
+  position: relative;
+  max-width: 78%;
+  left: 63px;
+}
+.Mlogo{
+  display: flex;
+    max-width: 80px; /* Adjust the maximum width as needed */
+    max-height: 130px; /* Adjust the maximum height as needed */
+    margin-left:50px;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 650px;
+  
+}
+
+.mf1 {
+  max-width: 50%; /* Adjust the width as needed */
+  text-align: left; /* Align the content to the left */
+  padding: 80px; /* Add padding for spacing */
+  margin-left: 85px;
+  margin: 0;
+}
+
+.mf2 {
+  max-width: 80px;
+  max-height: 130px;
+  margin-left: 480px;
+
+}   

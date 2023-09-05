@@ -1,15 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <text>
-          HIi
-        </text>
-      </header>
+      <Router>
+        <Navbar />
+        <Home/>
+        <Footer/>
+      </Router>
     </div>
   );
 }
