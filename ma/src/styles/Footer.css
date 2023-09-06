@@ -1,73 +1,136 @@
 .site-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--wp--preset--color--black);
-    color: var(--wp--preset--color--white);
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
+  text-align: center;
 }
 
-.h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.site-footer .Upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.Uppersite{
+  display: flex;
+  margin-left: 138px;
+}
+.uf1{
+  flex: 1;
+  width: 1420px;
+}
+.uf2 {
+  flex: 1;
 }
 
-.lowersite {
-    background-color: black;
-    padding: 20px 0; /* Add padding to the top and bottom */
-    text-align: center; /* Center-align the content */
+
+
+
+
+.Middle {
+  padding: 20px;
+  margin-bottom: 38px;
+  background-color: #6e6a6a;
+
 }
 
-.l1 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.l1 h5 {
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
-    font-size: 15px; /* Adjust font size as needed */
-    color: #6e6a6a; /* Cream white color */
-} 
-
-.quote p{
-  position: relative;
-  max-width: 78%;
-  left: 63px;
+.Middlesite {
+  display: flex;
+  margin-left: -30px;
+  align-items: center; /* Center-align vertically */
 }
 .Mlogo{
   display: flex;
-    max-width: 80px; /* Adjust the maximum width as needed */
-    max-height: 130px; /* Adjust the maximum height as needed */
-    margin-left:50px;
+  align-items: flex-start;
 }
-.social-icons{
+.Mlogo img {
+  height: 120px;
+  width: 200px;
+  max-width: 100%;
+}
+.quote{
+  text-align: left;
+}
+.social-icons {
   display: flex;
-  justify-content: space-between;
-  margin-left: 60px;
-  margin-right: 650px;
+  gap: 10px;
+  /* Add your styles for .social-icons here */
+}
+
+.mf1 {  
+  flex: 1;
+  flex-direction: column; /* Stack elements vertically */
+  margin-left: 220px;
+  max-width: 578px;
   
 }
+.mf2{
+  margin-left: 28px;
+  margin-bottom: 45px;
+  max-width: 280px;
+}
+.list1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mf2.Heading h4{
+  text-align: left;
+  margin-top: 38px;
 
-.mf1 {
-  max-width: 50%; /* Adjust the width as needed */
-  text-align: left; /* Align the content to the left */
-  padding: 80px; /* Add padding for spacing */
-  margin-left: 85px;
-  margin: 0;
+}
+.mf2 ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.mf2 {
-  max-width: 80px;
-  max-height: 130px;
-  margin-left: 480px;
+.mf2.Headinglist ul li .elementor-icon-list-icon {
+  flex: 0 0 auto; /* Ensure the icon doesn't grow or shrink */
+  margin-right: 5px; /* Add some spacing between the icon and text */
+}
+.text-content {
+  flex-direction: column; 
+}
+.mf2 ul li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.mf3{
+  margin-left: 40px;
+  margin-bottom: 35px;
+}
+.mf3.Heading h4{
+  text-align: left; 
+}
+.mf3 ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
 
-}   
+
+.mf3 ul li {
+  margin-bottom: 10px;
+}
+
+.lowersite {
+  background-color: black;
+  padding: 20px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center-align the content */
+}
+
+.l1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 15%;
+}
+
+.l1 h5 {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-size: 15px; /* Adjust font size as needed */
+  color: #6e6a6a; /* Cream white color */
+} 
