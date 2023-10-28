@@ -28,6 +28,7 @@ const App = () => (
   
     
   <Routes>
+    <Route path="/MA" element={<Home />} />
     <Route path="/" element={<Home />} />
     <Route path="/home" element={<Home />} />
 
