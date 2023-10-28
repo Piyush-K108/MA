@@ -1,0 +1,222 @@
+:root {
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: #ee7e46f3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card {
+  color: var(--clr-neutral-100);
+  background-image: url("../../../assets/Projects/Commercial/512MainView1.jpg");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(hsl(0 0% 0% / 0),
+      hsl(20 0% 0% / 0.3) 20%,
+      hsl(0 0% 0% / 1));
+}
+
+.cardTitle {
+  position: relative;
+  width: 100%; /* Allow the title to take up the full width of the card */
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  text-overflow: ellipsis; /* Show ellipsis (...) when text overflows */
+}
+
+
+.card:hover .cardTitle::after,
+.card:focus-within .cardTitle::after {
+  transform: scaleX(1);
+}
+
+.cardTitle::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: calc(100% + var(--padding));
+  left: calc(var(--padding) * -1);
+  bottom: -2px;
+  background: var(--clr-accent-400);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+@media (hover) {
+  .cardContent {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .cardContent>*:not(.cardTitle) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .card:hover .cardContent>*:not(.cardTitle),
+  .card:focus-within .cardContent>*:not(.cardTitle) {
+    opacity: 1;
+    transition-delay: 700ms;
+  }
+
+  .card:hover .cardContent,
+  .card:focus-within .cardContent {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .card:focus-within .cardContent {
+    transition-duration: 0ms;
+  }
+
+  .cardTitle::after {
+    transform: scaleX(0);
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25rem;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--clr-accent-400);
+  background-color: var(--clr-neutral-100);
+}
+
+.cardBody {
+  color: rgb(255, 255, 255/0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+
+
+/* popup */
+
+
+.bg-blur {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-custom-popup-bg {
+  background-color: #212121;
+}
+
+@media (max-width: 768px) {
+  .bg-custom-popup-bg {
+    width: 100%;
+  }
+}
+
+
+
+/* close button */
+
+
+#filterBtn {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+#filterBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms
+}
+
+#filterBtn:hover {
+  color: #e8e8e8;
+}
+
+#filterBtn:hover::before {
+  width: 100%;
+}
+
+
+.projectViewButton {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  font-weight:bold;
+  z-index: 1;
+  color:#ffffff;
+  box-shadow: 6px 6px 12px #212121,
+  -6px -6px 12px #212121;
+ }
+ 
+ .projectViewButton::before {
+   content: '';
+   width: 9em;
+  height: 0em;
+  border-radius: 30em;
+  position: absolute;
+  
+  background-image: linear-gradient(to top, #fff 00%, #fff 100%);
+
+  transition: .5s ease-in-out;
+  display: block;
+  z-index: -1;
+}

@@ -1,0 +1,45 @@
+.button2 {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #212121;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button2:hover {
+    background-color: #424242;
+}
+
+.button:hover .click-me {
+    opacity: 1;
+}
+
+.click-me {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Adjust the spacing between button and label */
+    left: 48%;
+    transform: translateX(-50%);
+    font-size: 14px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.homeProjectContainer {
+
+    transition: transform 500ms ease;
+}
+
+.homeProjectContainer:hover {
+    transform: scale(1.019);
+}
+
+.homeProjectBorder {
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

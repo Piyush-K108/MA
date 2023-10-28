@@ -1,0 +1,57 @@
+/* Assuming .appLogo is the class for the app logo element */
+
+.appLogo {
+  @apply fixed top-0 left-0 p-4 z-20;
+  /* Adjust the padding as needed to match the height of the tab bar */
+}
+
+.tabbar {
+  @apply flex md:hidden flex-row items-center justify-around px-8 h-16 bg-white visible md:invisible fixed bottom-0 w-full z-10 rounded-t-3xl text-2xl;
+}
+
+.tabItem {
+  @apply text-gray-400 hover:hover:text-[#FB9039] cursor-pointer w-16 h-full flex items-center justify-center;
+  transition: transform 0.3s ease; /* Add transition for the scaling effect */
+}
+
+.tabItem:hover {
+  transform: scale(1.1) translateY(-15px); /* Scale and move the tab item on hover */
+}
+
+.tabItemActive {
+  @apply bg-gradient-to-t from-white to-gray-100 border-t-2 border-gray-700 text-[#FB9039] hover:text-[#FB9039];
+  transform: scale(1.1) translateY(-5px); /* Scale and move the active tab item */
+}
+
+.icon {
+  @apply -mb-1;
+}
+
+
+
+.tabItemContainer {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  bottom: 60px; 
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.3s ease 0.1s, visibility 0s ease 0s;
+}
+
+.tabItemContainer:hover .label {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.tabItemContainer .label::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-left: 2px; 
+}

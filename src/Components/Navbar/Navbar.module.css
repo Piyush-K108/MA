@@ -1,0 +1,30 @@
+.navbar {
+  @apply  hidden md:flex px-[6%] flex-row items-center justify-between   h-[8vh]  bg-white z-10;
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 120px 80px -127px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  z-index: 1000;
+}
+
+.logo {
+  @apply  text-gray-800 -mb-1;
+}
+
+.navItems {
+  @apply flex  flex-row justify-between mx-8 w-[30%] self-end h-12;
+}
+
+.navItem {
+  @apply w-[100%] text-gray-400    hover:text-[#FB9039] cursor-pointer font-medium tracking-wide  flex items-start justify-center;
+  font-size: 0.96rem;
+}
+
+.selectedNavItem {
+  @apply text-[#FB9039] border-b-4 border-[#FB9039] bg-gradient-to-b from-white to-gray-100;
+}
+
+.actions {
+  @apply bg-white hover:bg-gray-50 border-2 border-gray-900  text-gray-900  px-5 rounded-lg font-medium  transition-transform tracking-wide leading-none ease-linear;
+}

@@ -1,0 +1,69 @@
+.slider {
+  width: 70%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.zoomIn {
+  animation: zoomIn 130s linear;
+  transform-origin: center center;
+}
+.zoomOut {
+  animation: zoomOut ;
+  transform-origin: center center;
+}
+
+.slide0 {
+  animation-delay: 0s;
+}
+
+.slide1 {
+  animation-delay: 0s; /* Delay the second image animation */
+}
+
+.slide2 {
+  animation-delay: 0s; /* Delay the third image animation */
+}
+
+.slide3 {
+  animation-delay: 0s; /* Delay the fourth image animation */
+}
+
+.slide4 {
+  animation-delay: 0s; /* Delay the fifth image animation */
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2.8);
+  }
+}
+
+
+
+@keyframes zoomOut {
+  to {
+    transform: scale(2.8);
+  }
+  from {
+    transform: scale(1);
+  }
+}

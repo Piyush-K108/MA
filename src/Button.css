@@ -1,0 +1,15 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 3, 3);
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25rem;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--clr-accent-400);
+  background-color: var(--clr-neutral-100);
+}

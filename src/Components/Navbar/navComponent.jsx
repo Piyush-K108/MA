@@ -1,0 +1,1 @@
+export default ["home", "about us", "services","contact us"];

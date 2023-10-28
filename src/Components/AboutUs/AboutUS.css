@@ -1,0 +1,33 @@
+/* Default styles for larger screens */
+.signature-container {
+  text-align: center;
+  font-family: 'Your Signature Font', cursive;
+  color: rgb(255, 116, 34);
+  padding: 50px 0;
+}
+
+.signature {
+  font-size: 72px;
+  letter-spacing: 7px;
+}
+
+.subheading {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .signature {
+    font-size: 38px; /* Decrease font size for smaller screens */
+  }
+
+  .subheading {
+    font-size: 18px; /* Decrease font size for smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .signature-container {
+    padding: 30px 0; /* Decrease top and bottom padding for smaller screens */
+  }
+}
